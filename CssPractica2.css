@@ -1,0 +1,47 @@
+/*configurar float*/
+clearfix::before,
+clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*eliminar efectos de enlace*/
+a{
+    text-decoration: none;
+    color: rgb(233,224,221);
+}
+
+header{
+    background-color: rgb(102, 84, 66);
+    width: 100%;
+    line-height: 94px;
+    height: 94px;
+
+}
+
+/*encabezado*/
+.encabezado{
+    margin: 0 20px;
+}
+
+.encabezado h1{
+    color: rgb(255, 249, 249); 
+    font-size: 28px;
+    float: left;
+}
+
+.encabezado a{
+    color:rgb(203,196,182);
+    font-size: 18px;
+    float:right;
+}
+
+
+.barra_nav li{
+    min-width: 1125px;
+    height: 40px;
+    margin: 0 auto;
+    float: left;
+}
+
