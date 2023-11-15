@@ -1,47 +1,146 @@
-/*configurar float*/
-clearfix::before,
-clearfix::after{
-    content: "";
-    display: table;
-    clear: both;
-}
 
 /*eliminar efectos de enlace*/
 a{
     text-decoration: none;
     color: rgb(233,224,221);
+    font-size: 20px;
 }
+
 
 header{
     background-color: rgb(102, 84, 66);
     width: 100%;
-    line-height: 94px;
-    height: 94px;
-
+    height: 11.87%;
+    display: flex;
+    flex-direction: column;
 }
 
 /*encabezado*/
 .encabezado{
-    margin: 0 20px;
+    display:flex;
+    justify-content: space-between;
+    margin:20px 25px 0;
 }
 
 .encabezado h1{
     color: rgb(255, 249, 249); 
-    font-size: 28px;
-    float: left;
+    font-size: 38px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
 .encabezado a{
     color:rgb(203,196,182);
-    font-size: 18px;
-    float:right;
 }
 
+/*barra de navegador*/
+.barra_nav {
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.barra_nav ul{
+    display: flex;
+    justify-content: center;
+}
 
 .barra_nav li{
-    min-width: 1125px;
-    height: 40px;
-    margin: 0 auto;
-    float: left;
+    margin: 20px 55px;
 }
 
+.barra_nav li:first-of-type{
+    text-decoration: underline;
+    color: rgb(233,224,221);
+}
+
+/*CSS para lateral*/
+.container{
+    display: flex;
+}
+
+aside{
+    width: 14.94%;
+    height: 750px;
+    background-color: rgb(194,167,140);
+    padding: 0 auto;
+    text-align: center;
+}
+
+aside h2,aside p,aside ul{
+    padding:20px;
+    color: rgb(253, 252, 250);
+    font-size: 20px;
+}
+
+main{
+    flex: 1;
+}
+
+
+/*terminar lateral*/
+
+/*primer imagen*/
+.contenedor1{
+    height: 50%;
+    width: auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.contenedor1 > .imagen1{
+    width: 85.85%;
+    height: 82.96%;
+    background-image: url("imagen1.jpeg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+    display: flex;
+    flex: column;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.imagen1 h2{
+    color: orange;
+    font-size: 50px;
+    text-align: center;
+}
+
+.imagen1 p{
+    margin: 25px 50px;
+    color: black;
+}
+
+.contenedor1 > .separador{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    height: 5px;
+    background-color:rgb(115, 115, 115);
+}
+
+/*fin de primer imagen*/
+
+/*inicio de main inferior*/
+
+.contenedor2 > h2{
+    font-size: 38px;
+    text-align: center;
+    margin: 2%;
+}
+
+.contenedor2 > .inferior{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fondo{
+    width: 22.37%;
+    height: 200px;
+    background-color: gray;
+}
